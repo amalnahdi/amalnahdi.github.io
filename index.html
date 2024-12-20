@@ -1,63 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        body {
-            background: #0d1117;
-            color: #c9d1d9;
-        }
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header class="hero">
-        <nav class="navbar">
-            <h1 class="logo">Creative</h1>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#works">Works</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="hero-content">
-            <h1>CREATIVE UI DESIGNER</h1>
-            <p>Bringing ideas to life with unique designs</p>
-            <a href="#about" class="btn">About Me</a>
-        </div>
+        <h1>Software Engineering Student</h1>
+        <p>Bringing innovative ideas to life through code and design</p>
+        <a href="#about" class="btn">About Me</a>
     </header>
 
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <section id="about" class="about-section">
-        <h2>About me</h2>
-        <p>I am a passionate UI designer with a focus on creating user-centric, visually appealing designs.</p>
-        <img src="about-illustration.jpg" alt="About me illustration">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate software engineering student from Tunisia with a background in customer service and a strong focus on creating intuitive and user-friendly solutions. 
+            My work spans fields like residence management (*Tawassalna*) and restaurant apps, where I've designed layouts and developed functional features for real-world use.
+        </p>
+        <img src="about-me.jpg" alt="About me illustration">
     </section>
 
     <section id="works" class="works-section">
-        <h2>My recent works</h2>
+        <h2>My Recent Projects</h2>
         <div class="work-gallery">
-            <img src="project1.jpg" alt="Project 1">
-            <img src="project2.jpg" alt="Project 2">
-            <img src="project3.jpg" alt="Project 3">
+            <div>
+                <img src="project1.jpg" alt="Tawassalna">
+                <p><strong>Tawassalna</strong><br>A back-office tool for managing residences, focused on community engagement and centralized management for administrators.</p>
+            </div>
+            <div>
+                <img src="project2.jpg" alt="Restaurant App">
+                <p><strong>Restaurant App</strong><br>Designed a modern, restaurant-themed layout with menu management and navigation for detailed item views.</p>
+            </div>
+            <div>
+                <img src="project3.jpg" alt="Internship at iPact Consult">
+                <p><strong>iPact Consult Internship</strong><br>Worked on a real-world project during my internship, focusing on efficient solutions tailored for clients.</p>
+            </div>
         </div>
     </section>
 
     <section id="contact" class="contact-section">
-        <h2>Got a project in mind?</h2>
+        <h2>Got a Project in Mind?</h2>
         <form>
             <input type="text" placeholder="Your Name" required>
             <input type="email" placeholder="Your Email" required>
             <textarea placeholder="Your Message"></textarea>
-            <button type="submit" class="btn">Send Message</button>
+            <button type="submit">Send Message</button>
         </form>
     </section>
 
     <footer>
-        <p>&copy; 2024 Creative. All rights reserved.</p>
-        <div class="socials">
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+        <div class="social-links">
             <a href="#">Facebook</a>
             <a href="#">Twitter</a>
             <a href="#">LinkedIn</a>

@@ -1,117 +1,221 @@
-body {
-    font-family: 'Roboto', Arial, sans-serif;
+/* General Reset */
+body, h1, h2, p, ul, li, a, input, textarea, button {
     margin: 0;
-    background: #0d1117;
-    color: #c9d1d9;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    background-color: #0f172a;
     line-height: 1.6;
 }
 
+a {
+    text-decoration: none;
+    color: #38bdf8;
+}
 
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #1e293b;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #38bdf8;
+}
+
+.hero p {
+    margin: 10px 0 20px;
+    font-size: 1.2rem;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #38bdf8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #0284c7;
+}
+
+/* Navbar */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background: #161b22;
+    background-color: #1e293b;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
+    justify-content: center;
     gap: 20px;
 }
 
 .navbar a {
-    text-decoration: none;
-    color: #c9d1d9;
-}
-
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-    background: #161b22;
-}
-
-.hero h1 {
-    font-size: 4rem;
-    color: #58a6ff;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin: 20px 0;
-}
-
-.hero .btn {
-    padding: 15px 30px;
-    background: #58a6ff;
-    color: #0d1117;
-    text-decoration: none;
-    border-radius: 5px;
+    color: #38bdf8;
     font-weight: bold;
+    transition: color 0.3s;
 }
 
-.about-section, .works-section, .contact-section {
-    padding: 80px 20px;
+.navbar a:hover {
+    color: #0284c7;
+}
+
+/* About Section */
+.about-section {
+    padding: 60px 20px;
     text-align: center;
+    background-color: #0f172a;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #38bdf8;
+}
+
+.about-section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-section img {
-    max-width: 300px;
-    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Works Section */
+.works-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #1e293b;
+}
+
+.works-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #38bdf8;
 }
 
 .work-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.work-gallery div {
+    background-color: #0f172a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .work-gallery img {
-    width: 250px;
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
-    transition: transform 0.3s ease;
+    margin-bottom: 10px;
 }
 
-.work-gallery img:hover {
-    transform: scale(1.05);
+.work-gallery p {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #0f172a;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #38bdf8;
 }
 
 .contact-section form {
-    max-width: 500px;
-    margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    align-items: center;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .contact-section input, 
 .contact-section textarea {
-    padding: 15px;
+    width: 100%;
+    padding: 10px;
     font-size: 1rem;
     border: none;
     border-radius: 5px;
+    background-color: #1e293b;
+    color: #ffffff;
+    outline: none;
 }
 
-.contact-section .btn {
-    padding: 15px 30px;
-    background: #58a6ff;
-    color: #0d1117;
+.contact-section textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contact-section button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #38bdf8;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
+.contact-section button:hover {
+    background-color: #0284c7;
+}
+
+/* Footer */
 footer {
     text-align: center;
-    padding: 20px;
-    background: #161b22;
-    color: #8b949e;
+    padding: 20px 0;
+    background-color: #1e293b;
+    color: #ffffff;
 }
 
-footer .socials a {
-    color: #58a6ff;
-    text-decoration: none;
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
     margin: 0 10px;
+    color: #38bdf8;
+    transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+    color: #0284c7;
 }
