@@ -219,3 +219,14 @@ footer .social-links a {
 footer .social-links a:hover {
     color: #0284c7;
 }
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adds spacing between the text and the image */
+}
+
+.profile-img {
+    width: 150px; /* Adjust the size of the image */
+    border-radius: 10px; /* Optional: Adds rounded corners to the image */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for better aesthetics */
+}
