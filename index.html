@@ -4,23 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="hero">
-        <h1>CREATIVE UI DESIGNER</h1>
-        <p>Your tagline here</p>
-        <a href="#about" class="btn">About Me</a>
+        <nav class="navbar">
+            <h1 class="logo">Creative</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>CREATIVE UI DESIGNER</h1>
+            <p>Bringing ideas to life with unique designs</p>
+            <a href="#about" class="btn">About Me</a>
+        </div>
     </header>
 
     <section id="about" class="about-section">
-        <h2>About Me</h2>
-        <p>I am a passionate UI designer with a focus on user-centric design...</p>
+        <h2>About me</h2>
+        <p>I am a passionate UI designer with a focus on creating user-centric, visually appealing designs.</p>
+        <img src="about-illustration.jpg" alt="About me illustration">
     </section>
 
     <section id="works" class="works-section">
-        <h2>My Recent Works</h2>
+        <h2>My recent works</h2>
         <div class="work-gallery">
             <img src="project1.jpg" alt="Project 1">
             <img src="project2.jpg" alt="Project 2">
@@ -29,17 +40,22 @@
     </section>
 
     <section id="contact" class="contact-section">
-        <h2>Got a Project in Mind?</h2>
+        <h2>Got a project in mind?</h2>
         <form>
             <input type="text" placeholder="Your Name" required>
             <input type="email" placeholder="Your Email" required>
             <textarea placeholder="Your Message"></textarea>
-            <button type="submit">Send Message</button>
+            <button type="submit" class="btn">Send Message</button>
         </form>
     </section>
 
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 Creative. All rights reserved.</p>
+        <div class="socials">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
     </footer>
 </body>
 </html>
